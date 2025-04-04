@@ -3,32 +3,81 @@
 <html>
 
 <head>
-<style>
-    body {background-color: aqua;
-    }
-    Header { background-color: blue;
-    }
-    Nav { background-color: blueviolet;
-    }
-    #intro { background-color: brown;
-    }
-    .main-sction-content h2 {background-color: red;
-    }
-    #bestsellers,
-    footer {background-color: yellowgreen;
-    }
-    header,
-    nav, 
-    #intro,
-    #main section,
-    #bestsellers, 
-    footer { border:5 px solid black;
-    }
-    table,
-    th, 
-    td { border: 1 px solid black;
-    }
-</style >
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        Header {
+            background-color: blue;
+        }
+
+        Nav {
+            background-color: blueviolet;
+        }
+
+        #intro {
+            background-color: brown;
+        }
+
+        .main-sction-content h2 {
+            background-color: red;
+        }
+
+        #bestsellers,
+        footer {
+            background-color: yellowgreen;
+        }
+
+        header,
+        nav,
+        #intro,
+        #main section,
+        #bestsellers,
+        footer {
+            border: 5 px solid black;
+        }
+
+        table,
+        th,
+        td {
+            border: 1 px solid black;
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        #intro {
+            grid-area: intro;
+        }
+
+        #main-section {
+            grid-area: main-section;
+        }
+
+        #bestsellers {
+            grid-area: bestsellers;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-areas:
+                "header header header header intro"
+                "nav nav nav nav intro"
+                "main-section main -section main-section main-sectoin main-section bestsellers"
+                "footer footer footer footer footer";
+        }
+    </style>
     <title>Book Club</title>
 
 </head>
@@ -78,12 +127,12 @@
                             <td>11a.m.-3a.m.</td>
                         </tr>
                         <tr>
-                        </table>
+                    </table>
 
-                                <div id="Best sellers">
-                                    <h2>Best Sellers </h2>
-                                    <ol>
-                                        <li><B>Charlie and The Choclate Factory </B>by <em>Roald Dahl </em></li>
-                                        <li><B>The Cat in The Hat </B>by <em>Dr Seuss </em></li>
-                                        <li><B>The Little Prince </B>by <em>Antoine De Saht</em></li>
-                                    </ol>
+                    <div id="Best sellers">
+                        <h2>Best Sellers </h2>
+                        <ol>
+                            <li><B>Charlie and The Choclate Factory </B>by <em>Roald Dahl </em></li>
+                            <li><B>The Cat in The Hat </B>by <em>Dr Seuss </em></li>
+                            <li><B>The Little Prince </B>by <em>Antoine De Saht</em></li>
+                        </ol>
