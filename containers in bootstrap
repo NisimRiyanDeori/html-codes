@@ -1,0 +1,10 @@
+</head>
+<body>
+    <div class="container bg-success text-white" >
+        <h1>My bootstrap page </h1>
+        <P>This part is inside a container class.</P>
+        <p>the container class provides a respnsivefixed width container.</p>
+    </div>
+
+</body>
+</html>
