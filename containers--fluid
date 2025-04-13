@@ -1,0 +1,18 @@
+<title>fluid container</title>
+</head>
+
+<body>
+
+
+    <div class="container-fluid bg-success text-white">
+        <h1>My Bootstrap page</h1>
+        <p>This part is inside a container-fluid class.</p>
+    </div>hi </div>
+    </div>
+    <div class="container-fluid bg-success text-white">
+        <h1>My Bootstrap page</h1>
+        <p>this is some text .</p>
+    </div>
+</body>
+
+</html>
