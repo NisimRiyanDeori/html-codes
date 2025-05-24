@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navbar</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .topnav a {
+                overflow: hidden;
+                background-color: rgba(119, 0, 255, 0.545);
+            }
+            .topnav a {
+             float: left;
+             color: rgb(255, 0, 0);
+             text-align: center;
+             padding: 14px 16px;
+             text-decoration: none;
+             font-size: 17px;   
+            }
+
+            .topnav a:hover {
+                background-color: aquamarine;
+                color: black;
+            }
+            .topnav a.active {
+                background-color: yellowgreen;
+                color: lightseagreen;
+            }
+            </style>
+            </head>
+            <body></body>
+
+            <div class="topnav">
+                <a class="active" href="#home">Home</a>
+                <a href="#">About_Us</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact_Us</a>
+                </div>
+
+            </body>
+</html>
+        
+
+        
