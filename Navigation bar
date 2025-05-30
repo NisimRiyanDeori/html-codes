@@ -40,8 +40,44 @@
                 <a href="#">Contact_Us</a>
                 </div>
 
-            </body>
-</html>
-        
+                <section>
+                
+                    <img class="myslides" src="TIGER.jpg" style="height:500px">
+                
+                    <img class="myslides" src="LION.jpg" style="height:500px">
+                
+                </section>
+                
+                <script>
 
-        
+                    var myIndex = 0;
+
+                    carousel();
+
+                    function carousel() {
+
+                        var i;
+
+                        var x = document.getElementsByClassName("myslides");
+
+                        for (i = 0; i < x.length; i++) {
+
+                            x[i].style.display = "none"; // Hide all images
+
+                        }
+
+                        myIndex++;
+
+                        if (myIndex > x.length) {
+
+                            myIndex = 1;
+
+                        }
+
+                        x[myIndex - 1].style.display = "block"; // Show current image
+
+                        setTimeout(carousel, 3000); // Repeat every 3 seconds
+
+                    }
+
+                           </script>
