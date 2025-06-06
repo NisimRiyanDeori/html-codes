@@ -1,126 +1,173 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Navbar</title>
-        <style>
-            .ping1, .ping2, .ping3{
-                position: relative;
-                opacity: 0.70;
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-            }
-            .ping1{
-                background-image:url('TIGER.jpg');
-                min-height: 100%;
-            }
-            .ping2{
-                background-image:url('LION.jpg');
-                min-height: 400px;
-            }
-            .ping3{
-                background-image:url('LEOPARD.jpg');
-                min-height: 400px;
-            }
-            .section{
-                text-align: center;
-                padding: 50px and 80px;
-            }
-.section-light{
-    background-color: rgb(255, 196, 0);
-    color: rgb(102, 255, 0);
-}
-.section-dark{
-    background-color: rgb(144, 0, 255);
-    color: rgb(125, 87, 150);
-}
-.ptext{
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: black;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-}
 
-            body {
-                margin: 0;
-                font-family: Arial, Helvetica, sans-serif;
-            }
+<head>
+    <title>Navbar</title>
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
 
-            .topnav a {
-                overflow: hidden;
-                background-color: rgba(119, 0, 255, 0.545);
-            }
-            .topnav a {
-             float: left;
-             color: rgb(255, 0, 0);
-             text-align: center;
-             padding: 14px 16px;
-             text-decoration: none;
-             font-size: 17px;   
-            }
+        .ping1,
+        .ping2,
+        .ping3 {
+            position: relative;
+            opacity: 0.70;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
 
-            .topnav a:hover {
-                background-color: aquamarine;
-                color: black;
-            }
-            .topnav a.active {
-                background-color: yellowgreen;
-                color: lightseagreen;
-            }
-            </style>
-            </head>
-            <body></body>
+        .ping1 {
+            background-image: url('TIGER.jpg');
+            min-height: 100%;
+        }
 
-            <div class="topnav">
-                <a class="active" href="#home">Home</a>
-                <a href="#">About_Us</a>
-                <a href="#">Gallery</a>
-                <a href="#">Contact_Us</a>
-                </div>
+        .ping2 {
+            background-image: url('LION.jpg');
+            min-height: 400px;
+        }
 
-                <section>
-                
-                    <img class="myslides" src="TIGER.jpg" style="height:500px">
-                
-                    <img class="myslides" src="LION.jpg" style="height:500px">
-                
-                </section>
-                
-                <script>
+        .ping3 {
+            background-image: url('LEOPARD.jpg');
+            min-height: 400px;
+        }
 
-                    var myIndex = 0;
+        .section {
+            text-align: center;
+            padding: 50px and 80px;
+        }
 
-                    carousel();
+        .section-light {
+            background-color: rgb(255, 196, 0);
+            color: rgb(102, 255, 0);
+        }
 
-                    function carousel() {
+        .section-dark {
+            background-color: rgb(144, 0, 255);
+            color: rgb(125, 87, 150);
+        }
 
-                        var i;
+        .ptext {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: black;
+            font-size: 27px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+        }
 
-                        var x = document.getElementsByClassName("myslides");
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-                        for (i = 0; i < x.length; i++) {
+        .topnav a {
+            overflow: hidden;
+            background-color: rgba(119, 0, 255, 0.545);
+        }
 
-                            x[i].style.display = "none"; // Hide all images
+        .topnav a {
+            float: left;
+            color: rgb(255, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
 
-                        }
+        .topnav a:hover {
+            background-color: aquamarine;
+            color: black;
+        }
 
-                        myIndex++;
+        .topnav a.active {
+            background-color: yellowgreen;
+            color: lightseagreen;
+        }
+    </style>
+</head>
 
-                        if (myIndex > x.length) {
+<body></body>
 
-                            myIndex = 1;
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#">About_Us</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact_Us</a>
+</div>
 
-                        }
+<section>
 
-                        x[myIndex - 1].style.display = "block"; // Show current image
+    <img class="myslides" src="TIGER.jpg" style="height:500px">
 
-                        setTimeout(carousel, 3000); // Repeat every 3 seconds
+    <img class="myslides" src="LION.jpg" style="height:500px">
 
-                    }
+</section>
 
-                           </script>
+<script>
+
+    var myIndex = 0;
+
+    carousel();
+
+    function carousel() {
+
+        var i;
+
+        var x = document.getElementsByClassName("myslides");
+
+        for (i = 0; i < x.length; i++) {
+
+            x[i].style.display = "none"; // Hide all images
+
+        }
+
+        myIndex++;
+
+        if (myIndex > x.length) {
+
+            myIndex = 1;
+
+        }
+
+        x[myIndex - 1].style.display = "block"; // Show current image
+
+        setTimeout(carousel, 3000); // Repeat every 3 seconds
+
+    }
+
+</script>
+<spam class="border trans" style="font-size:40px;">
+    <center>Welcome all to this website</center>
+</spam><br>
+<section class="section-dark">
+    <h2>Section one</h2>
+    <p>
+        Web development is the process of creating, building, and maintaining websites and web applications.
+    </p>
+</section>
+
+<div class="ping3">
+    <div class="ptext">
+        <span class="border trans">
+            Image Two Text
+        </span>
+    </div>
+</div>
+<div class="footer">
+    <p>@copy all rights and reserved by Nisim Riyan Deori</p>
+</div>
+
+</body>
+
+</html>
